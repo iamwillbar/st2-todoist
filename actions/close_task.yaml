@@ -1,0 +1,12 @@
+---
+name: close_task
+pack: todoist
+runner_type: python-script
+description: Close a task
+entry_point: close_task.py
+parameters:
+  task_id:
+    type: integer
+    description: ID of the task.
+    required: true
+    position: 1

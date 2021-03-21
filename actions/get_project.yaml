@@ -1,0 +1,12 @@
+---
+name: get_project
+pack: todoist
+runner_type: python-script
+description: Gets a project
+entry_point: get_project.py
+parameters:
+  project_id:
+    type: integer
+    description: Project ID.
+    required: true
+    position: 1

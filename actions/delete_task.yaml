@@ -1,0 +1,12 @@
+---
+name: delete_task
+pack: todoist
+runner_type: python-script
+description: Deletes a task
+entry_point: delete_task.py
+parameters:
+  task_id:
+    type: integer
+    description: ID of the task.
+    required: true
+    position: 1

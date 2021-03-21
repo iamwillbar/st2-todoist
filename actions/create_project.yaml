@@ -1,0 +1,27 @@
+---
+name: create_project
+pack: todoist
+runner_type: python-script
+description: Creates a new projects
+entry_point: create_project.py
+parameters:
+  name:
+    type: string
+    description: Name of the project.
+    required: true
+    position: 1
+  parent_id:
+    type: integer
+    description: Parent project ID.
+    required: false
+    position: 2
+  color:
+    type: integer
+    description: A numeric ID representing the color of the project icon.
+    required: false
+    position: 3
+  favorite:
+    type: boolean
+    description: Whether the project is a favorite.
+    required: false
+    position: 4

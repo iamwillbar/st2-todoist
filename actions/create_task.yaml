@@ -1,0 +1,67 @@
+---
+name: create_task
+pack: todoist
+runner_type: python-script
+description: Creates a new task
+entry_point: create_task.py
+parameters:
+  content:
+    type: string
+    description: Task content. This value may contain markdown-formatted text and hyperlinks.
+    required: true
+    position: 1
+  project_id:
+    type: integer
+    description: Task project ID. If not set, task is put to user's Inbox.
+    required: false
+    position: 2
+  section_id:
+    type: integer
+    description: ID of section to put task into.
+    required: false
+    position: 3
+  parent_id:
+    type: integer
+    description: Parent task ID.
+    required: false
+    position: 4
+  order:
+    type: integer
+    description: Non-zero integer value used by clients to sort tasks under the same parent.
+    required: false
+    position: 5
+  label_ids:
+    type: array
+    description: IDs of labels associated with the task (array of integers).
+    required: false
+    position: 6
+  priority:
+    type: integer
+    description: Task priority from 1 (normal) to 4 (urgent).
+    required: false
+    position: 7
+  due_string:
+    type: string
+    description: 'Human defined task due date (ex.: "next Monday", "Tomorrow"). Value is set using local (not UTC) time.'
+    required: false
+    position: 8
+  due_date:
+    type: string
+    description: Specific date in YYYY-MM-DD format relative to user’s timezone.
+    required: false
+    position: 9
+  due_datetime:
+    type: string
+    description: Specific date and time in RFC3339 format in UTC.
+    required: false
+    position: 10
+  due_lang:
+    type: string
+    description: 2-letter code specifying language in case due_string is not written in English.
+    required: false
+    position: 11
+  assignee:
+    type: integer
+    description: The responsible user ID (if set, and only for shared tasks).
+    required: false
+    position: 12

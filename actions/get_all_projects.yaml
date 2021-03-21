@@ -1,0 +1,6 @@
+---
+name: get_all_projects
+pack: todoist
+runner_type: python-script
+description: Gets all projects
+entry_point: get_all_projects.py

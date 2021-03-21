@@ -1,0 +1,13 @@
+ref: todoist
+name: Todoist
+description: Pack to integrate with Todoist. Not created by, affiliated with, or supported by Doist.
+keywords:
+  - todoist
+  - task
+  - project
+  - productivity
+version: 0.1.0
+python_versions:
+  - '3'
+author: William Bartholomew
+email: wdb@willbar.com

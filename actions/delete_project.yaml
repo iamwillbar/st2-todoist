@@ -1,0 +1,12 @@
+---
+name: delete_project
+pack: todoist
+runner_type: python-script
+description: Deletes a project
+entry_point: delete_project.py
+parameters:
+  project_id:
+    type: integer
+    description: ID of the project.
+    required: true
+    position: 1
